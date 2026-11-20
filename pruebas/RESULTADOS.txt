@@ -1,0 +1,9 @@
+EDICIÓN 2.0 / VALIDACIÓN
+
+Física
+- 54 configuraciones de geometría, absorción y tiempos, con rotación, causalidad y reproducibilidad.
+- Los cinco casos de energía conservan el balance entre cascada, depósito del muón y energía de salida.
+- Los pulsos cumplen el umbral y tienen tiempos no negativos.
+- El caso 89 registra cero señales con 200 m de separación y 40 m de absorción; registra nueve al cambiar solo la absorción a 150 m.
+- El diseño central y el extendido se comparan con los mismos cinco eventos, a igual presupuesto.
+

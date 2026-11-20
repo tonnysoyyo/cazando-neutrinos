@@ -1,0 +1,5 @@
+Nombre de la simulación: Cazando neutrinos en hielo
+Descripción: Simulador de luz Cherenkov para inferir la dirección de un muón, estimar la energía depositada y comparar detectores inspirados en IceCube.
+
+Institución: Universidad de Antioquia
+Curso: Laboratorio Avanzado 3

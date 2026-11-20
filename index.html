@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cazando neutrinos en hielo</title>
+<link rel="icon" href="assets/icono_400.png">
+<link rel="stylesheet" href="src/style.css">
+<script defer src="src/physics.js"></script>
+<script defer src="src/missions.js"></script>
+<script defer src="src/detector.js"></script>
+<script defer src="src/app.js"></script>
+</head>
+<body>
+<header class="masthead"><div class="shell mast-inner">
+  <a class="wordmark" href="index.html"><img src="assets/icono_400.png" alt="">Laboratorio de Física</a>
+  <span>Universidad de Antioquia</span>
+</div></header>
+<main class="shell">
+  <section class="intro">
+    <div class="intro-copy"><p class="overline">Un experimento inspirado en IceCube</p>
+      <h1>Cazando neutrinos<br>en hielo</h1>
+      <p>La luz que llega a los sensores ofrece pistas sobre lo que pasó bajo el hielo.</p>
+    </div>
+    <div class="hero-art" aria-hidden="true"></div>
+  </section>
+  <nav class="modes" aria-label="Actividades del simulador">
+    <button data-mode="guide" aria-pressed="true">Primer evento</button>
+    <button data-mode="direction" aria-pressed="false">Tres consultas</button>
+    <button data-mode="energy" aria-pressed="false">Energía</button>
+    <button data-mode="classify" aria-pressed="false">Traza o cascada</button>
+    <button data-mode="compare" aria-pressed="false">Comparar detectores</button>
+    <button data-mode="design" aria-pressed="false">Diseñar detector</button>
+  </nav>
+  <section aria-labelledby="mission-title">
+    <div id="mission" class="mission"></div>
+    <div class="workbench">
+      <div class="observation">
+        <div class="view-head"><h3>Visor del detector</h3><span>Plano de 1 km × 1 km</span></div>
+        <div class="detectors" id="detectors">
+          <figure><figcaption id="left-label">Detector</figcaption>
+            <canvas id="left" width="600" height="600" aria-label="Plano de sensores. También se pueden consultar mediante la lista de sensores activos."></canvas>
+          </figure>
+          <figure id="right-figure" hidden><figcaption id="right-label"></figcaption>
+            <canvas id="right" width="600" height="600" aria-label="Segundo detector para comparación"></canvas>
+          </figure>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="timeline" id="playback">
+          <button id="play" class="primary">Reproducir</button><button id="end">Ver evento completo</button>
+          <label class="sr-only" for="time">Tiempo del evento</label><input type="range" id="time" min="0" max="1000" value="0">
+          <output id="clock">0 ns</output>
+        </div>
+        <p id="status" role="status" class="status"></p>
+      </div>
+      <aside class="sidebar" id="sidebar" aria-label="Controles y resultados"></aside>
+    </div>
+  </section>
+  <section class="notes">
+    <article><h2>Cómo ver lo invisible</h2><p>Una interacción en el hielo puede producir partículas cargadas que emiten luz Cherenkov. En el visor, las posiciones de los sensores, los tiempos de llegada y la luz registrada sirven para inferir la trayectoria y la energía depositada.</p><p>El detector 2D y la respuesta óptica son idealizaciones. Los eventos del reto son simulados.</p></article>
+    <article><h2>Del hielo al cielo</h2><p>En 2017, IceCube-170922A coincidió en dirección y tiempo con un aumento de la emisión gamma del blázar TXS 0506+056. La alerta permitió que otros observatorios examinaran la misma región.</p><a href="https://icecube.wisc.edu/data-releases/2018/07/icecube-catalog-of-alert-events-up-through-icecube-170922a/">Consultar el catálogo de IceCube ↗</a></article>
+  </section>
+  <footer><strong>Cazando neutrinos en hielo</strong><a href="documentos/Fisica_de_la_simulacion.pdf">Fundamentos físicos (PDF)</a><a href="documentos/Actividad_propuesta.pdf">Actividad de laboratorio (PDF)</a></footer>
+</main>
+</body>
+</html>
